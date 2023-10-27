@@ -1,0 +1,5 @@
+- Average score : 85.0
+- Max age : 30
+- Max score : 92.0
+- Total entries : 3
+- Individuals with a Score > 80 : [Alice, Charlie]
