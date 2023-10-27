@@ -9,6 +9,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
         //commented-1
         //commented-2
+        List.of(new Student("Alice",23, 80));
+
         CSVReader csvReader = new CSVReader();
         final FileManager fileManager = new FileManager();
             

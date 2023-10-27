@@ -1,11 +1,12 @@
 package task3;
 
-import java.util.Comparator;
+import java.io.Serializable;
 
-public class Student implements Comparator<Student> {
+public class Student implements Serializable {
     private String name;
     private int age;
     private double score;
+    private transient String password = "asda"; // transient ignores filed in serialization
 
     public Student(String name, int age, double score) {
         this.name = name;
@@ -38,12 +39,11 @@ public class Student implements Comparator<Student> {
     }
 
     @Override
-    public int compare(Student o1, Student o2) {
-        if (o1.getScore() > o2.getScore()) {
-            return 1;
-        } else if (o1.getScore() < o2.getScore()) {
-            return -1;
-        }
-        return 0;
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", score=" + score +
+                '}';
     }
 }
