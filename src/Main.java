@@ -7,9 +7,10 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+        //commented
         CSVReader csvReader = new CSVReader();
         final FileManager fileManager = new FileManager();
-
+            
         final List<Student> students = csvReader.getStudentsFromCSV("resources/info.csv");
         fileManager.writeStudentsAnalysis(students, "resources/analysis.txt");
     }
